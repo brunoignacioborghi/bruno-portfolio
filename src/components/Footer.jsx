@@ -38,7 +38,7 @@ export default function Footer() {
         {/* GitHub */}
         <motion.a
           className="footer-link icon-link"
-          href="https://github.com/brunites"
+          href="https://github.com/brunoignacioborghi"
           target="_blank"
           rel="noreferrer"
           whileHover={{ scale: 1.06, y: -1 }}

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+
+import profilePic from "../assets/profile.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { handleSmoothAnchorClick } from "../utils/scroll";
 
@@ -15,7 +17,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home" aria-label="hero">
       <motion.img
-        src="/src/assets/profile.jpg"
+        src={profilePic}
         alt="Bruno profile"
         className="hero-avatar avatar-clickable"
         initial={{ scale: 0.9, opacity: 0 }}
@@ -85,7 +87,7 @@ export default function Hero() {
             aria-label="Close profile photo"
           >
             <motion.img
-              src="/src/assets/profile.jpg"
+              src={profilePic}
               alt="Bruno profile enlarged"
               className="avatar-enlarged"
               onClick={(e) => e.stopPropagation()}
